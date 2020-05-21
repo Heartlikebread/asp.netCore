@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="container">
+        <div class="row justify-content-center"">            
+            <div class="col-6" style="border:groove;border-bottom-color:black;border-bottom-width:1px">
+                <input type="text" id="Trigger" name="master" value="" style="width:100%;text-align: right"  readonly="readonly" />
+
+                <div class="row justify-content-center">
+                    <div class="col-6" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btnClear" style="width:100%"  onclick="Clear()">CE</button>
+                    </div>                  
+                </div>
+                <div class="row">
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btn7" style="width:100%" value="7" onclick="GetValue(this.value)">7</button>
+                    </div>
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btn8" style="width:100%" value="8" onclick="GetValue(this.value)">8</button>
+                    </div>
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btn9" style="width:100%" value="9" onclick="GetValue(this.value)">9</button>
+                    </div>
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btnAdd" style="width:100%" onclick="FuncAlgorithm('Add')">+</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btn4" style="width:100%" value="4" onclick="GetValue(this.value)">4</button>
+                    </div>
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btn5" style="width:100%" value="5" onclick="GetValue(this.value)">5</button>
+                    </div>
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btn6" style="width:100%" value="6" onclick="GetValue(this.value)">6</button>
+                    </div>
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btnLess" style="width:100%" onclick="FuncAlgorithm('Less')">-</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btn1" style="width:100%" value="1" onclick="GetValue(this.value)">1</button>
+                    </div>
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btn2" style="width:100%" value="2" onclick="GetValue(this.value)">2</button>
+                    </div>
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btn3" style="width:100%" value="3" onclick="GetValue(this.value)">3</button>
+                    </div>
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btnMultiply" style="width:100%" onclick="FuncAlgorithm('Multiply')">*</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btn" style="width:100%" onclick="FuncEqual()">=</button>
+                    </div>
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btn0" style="width:100%" value="0" onclick="GetValue(this.value)">0</button>
+                    </div>
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btnComma" style="width:100%"  onclick="GetValue('.')">.</button>
+                    </div>
+                    <div class="col-3" style="padding:5px">
+                        <button class=" btn btn-outline-dark" id="btnExcept" style="width:100%" onclick="FuncAlgorithm('Except')">/</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>     
+        var showNumber = document.getElementById("Trigger");
+        var strBeforeValue = "";
+        var strScratchpad = "";
+        var algorithm = "";
+       
+        //清空
+        function Clear() {
+            strBeforeValue = "";
+            strScratchpad = "";
+            algorithm = "";
+            showNumber.value = "";     
+        }
+        //取得點擊的數值
+        function GetValue(number)
+        {
+            //檢查是否輸入過小數點惹 要報錯!
+            if (strBeforeValue.indexOf('.') >= 0 && number=='.') {
+                return;
+            }
+            if (strBeforeValue != "" ) {
+                strBeforeValue = strBeforeValue + number;
+            } else {
+                strBeforeValue = number;
+            }
+            showNumber.value = strBeforeValue;         
+        }       
+        //給予算法
+        function FuncAlgorithm(faceAlgorithm) {
+
+            strScratchpad = strBeforeValue;
+            strBeforeValue = "";
+            algorithm = faceAlgorithm;
+        }
+        //等於
+        function FuncEqual() {              
+            switch (algorithm) {
+                case 'Add':
+                    strScratchpad=parseFloat(strScratchpad) + parseFloat(strBeforeValue);
+                   
+                    break;
+                case 'Less':
+                    strScratchpad = parseFloat(strScratchpad) - parseFloat(strBeforeValue);
+                    break;
+                case 'Multiply':
+                    strScratchpad = parseFloat(strScratchpad) * parseFloat(strBeforeValue);
+                    break;
+                case 'Except':
+                    strScratchpad = parseFloat(strScratchpad) / parseFloat(strBeforeValue);
+                    break;
+                default:
+                    alert('找不到你輸入的算法!');
+            }
+
+            showNumber.value = strScratchpad;
+        }    
+    </script>

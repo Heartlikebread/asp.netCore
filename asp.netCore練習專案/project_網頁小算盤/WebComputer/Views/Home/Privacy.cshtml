@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<input type="text" name="responAns" id="txtResponAns" value="" />
+<button onclick="GetVaule()">取得參數</button>
+<!--http://localhost:57405/Home/RespondAns?strRequest=123-->
+<script type="text/javascript">
+    function GetVaule() {
+        //$.ajax({
+        //    type: "get",
+        //    url: "http://localhost:57405/Home/RespondAns",
+         
+        //    data: { strRequest: "1" },
+        //    success: function (data, status) {
+        //        if (status == "success") {
+        //            $("#txtResponAns").val(data);
+        //        }
+        //    }
+        //});
+        fetch('http://localhost:57405/Home/RespondAns', {
+            method: 'GET',
+            data: { strRequest: "1" },
+            headers: new Headers({
+                'Content-Type': 'text/json'
+            })
+        }).then(function (response) {
+            if (response) {
+                $("#txtResponAns").val(response);
+            }
+        })
+    }
+
+  
+
+
+</script>

@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+
+@*<input id="a"/>
+<button id="b">send</button>
+ <h1 id="h"></h1>*@
+<script type="text/javascript">
+
+   
+
+
+
+    //傳統使用setTimeout進行
+//    const delay = (s) => {
+//  return new Promise(resolve => {
+//    setTimeout(resolve,s);
+//  });
+//};
+
+//delay().then(() => {
+//  console.log(1);     // 顯示 1
+//  return delay(1000); // 延遲ㄧ秒
+//}).then(() => {
+//  console.log(2);     // 顯示 2
+//  return delay(2000); // 延遲二秒
+//}).then(() => {
+//  console.log(3);     // 顯示 3
+//});
+
+
+    //使用async的寫法
+    //~async function(){           // ~ 開頭表示直接執行這個 function，結尾有 ()
+    //    const delay = (s) => {
+    //        return new Promise(function (resolve) {  // 回傳一個 promise
+    //            setTimeout(resolve, s);               // 等待多少秒之後 resolve()
+    //        });
+    //    };
+
+    //    console.log(1);      // 顯示 1
+    //    await delay(1000);   // 延遲ㄧ秒
+    //    console.log(2);      // 顯示 2
+    //    await delay(2000);   // 延遲二秒
+    //    console.log(3);      // 顯示 3
+    //}();
+
+    //下面的程式碼執行之後，並「不會」如我們預期的「先顯示 1，
+    //再顯示 haha0...haha5，最後再顯示 2」，而是「先顯示 1 和 2，
+    //然後再出現 haha0...haha5」，因為雖然程式邏輯是從上往下，
+    //但在 count function 裏頭是非同步的語法，導致自己走自己的路，也造成了結果的不如預期。
+    const count = (t, s) => {
+        let a = 0;
+        let timer = test();
+        setInterval(test(t, s), s);
+    };
+    function test(t, s) {
+        console.log(`${t}${a}`);
+        a = a + 1;
+        if (a > 5) {
+            clearInterval(timer);
+        }
+    }
+
+
+    console.log(1);
+    count('haha', 100);
+    console.log(2);
+
+    //這時我們可以透過 async、await 和 promise 進行修正，在顯示 1 之後，會「等待」count function 結束後再顯示 2
+    //~async function () {
+    //    const count = (t, s) => {
+    //        return new Promise(resolve => {
+    //            let a = 0;
+    //            let timer = setInterval(() => {
+    //                console.log(`${t}${a}`);
+    //                a = a + 1;
+    //                if (a > 5) {
+    //                    clearInterval(timer);
+    //                    resolve();  // 表示完成
+    //                }
+    //            }, s);
+    //        });
+    //    };
+
+    //    console.log(1);
+    //    await count('haha', 100);
+    //    console.log(2);
+    //}();
+
+
+
+
+    //~async function () {
+    //    const input = () => {
+    //        return new Promise(resolve => {
+    //            const btnClick = () => {
+    //                h.insertAdjacentHTML('beforeend', a.value + '<br/>');   // 輸入後在 h1 裡添加內容
+    //                a.value = '';   // 清空輸入框
+    //                a.focus();      // 將焦點移至輸入框
+    //                b.removeEventListener('click', btnClick);  // removeEventListener 避免重複綁定事件
+    //                resolve();      // 完成
+    //            };
+    //            b.addEventListener('click', btnClick); // 綁定按鈕事件
+    //        });
+    //    };
+    //    h.insertAdjacentHTML('beforeend', '開始<br/>');
+    //    await input();     //  等待輸入，輸入後才會進行下一步
+    //    await input();
+    //    await input();
+    //    h.insertAdjacentHTML('beforeend', '結束');
+    //}();
+
+
+
+</script>
