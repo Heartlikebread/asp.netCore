@@ -1,0 +1,115 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!--加入屬性accept 可以檢查副檔名比如說".pdf"只有予許PDF檔案進行上傳相對的還有.xls||
+    image/* 包含 .jpg、.png、.gif 等圖檔||
+    text/html .htm 與 .html 等網頁檔||
+    video/* 包含 .avi、.mp4、.mpg 等影片檔||
+    audio/* 包含 .mp3、.wav 等聲音檔||
+    可使用逗號分隔多種檔案格式如 accept="image/*,.pdf,.xls" 方式限制
+    -->
+<div>
+    <h4>單筆資料上傳</h4>
+    <form asp-controller="Home" asp-action="SingleFile" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <button type="submit">提交</button>
+    </form>
+</div>
+
+
+<div>
+    <h4>多筆資料上傳</h4>
+    <form asp-controller="Home" asp-action="MultipleFiles" method="post" enctype="multipart/form-data">
+        <input type="file" multiple name="files" />
+        <button type="submit">提交</button>
+    </form>
+</div>
+
+
+<div>
+    <h4>使用類別進行上傳 單筆資料上傳</h4>
+    <form asp-controller="Home" asp-action="FileModel" method="post" enctype="multipart/form-data">
+        <input type="text" name="someForm.Name" />
+        <input type="file" name="someForm.File" />
+        <button type="submit">提交</button>
+    </form>
+</div>
+
+
+<div>
+    <h4>使用JS進行上傳 單筆資料上傳</h4>
+    <input type="file" id="signle-file" onchange="UploadFile(event)" />
+</div>
+
+<div>
+    <h4>使用JS進行上傳 多筆資料上傳</h4>
+    <input type="file" multiple id="signle-file" onchange="UploadMultipleFile(event)" />
+</div>
+
+<div>
+    <h4>使用JS進行上傳 類別資料上傳</h4>
+    <input type="text" id="txtName" />
+    <input type="file"onchange="UploadClassFile(event)" />
+</div>
+
+@section scripts{
+    <script>
+        //單筆
+        var UploadFile = function (e) {
+         
+            var file = e.target.files[0];
+
+            var formData = new FormData();
+
+            formData.append("file", file);
+
+            axios.post("/Home/SingleFile", formData);
+        }
+
+
+
+        //多筆進行回傳
+        function UploadMultipleFile(e) {
+            var files = e.target.files;
+            var formData = new FormData();
+            for (var i = 0; i < files.length; i++) {
+                formData.append("files", files[i]);
+            }
+            axios.post("/Home/MultipleFiles", formData)
+        }
+
+        //使用類別進行回傳
+        function UploadClassFile(e) {
+
+            var name = document.getElementById('txtName').value;
+            var file = e.target.files[0];
+
+            var formData = new FormData();
+
+            formData.append("someForm.File", file);
+            formData.append("someForm.Name", name);
+
+
+            axios.post("/Home/FileModel", formData)
+        }
+
+        //也可以透過javascript進行檢查
+        function checkfile(sender) {
+
+            // 可接受的附檔名
+            var validExts = new Array(".jpg", ".png", ".gif");
+
+            var fileExt = sender.value;
+            fileExt = fileExt.substring(fileExt.lastIndexOf('.'));
+            if (validExts.indexOf(fileExt) < 0) {
+                alert("檔案類型錯誤，可接受的副檔名有：" + validExts.toString());
+                sender.value = null;
+                return false;
+            }
+            else return true;
+        }
+
+    </script>
+}
