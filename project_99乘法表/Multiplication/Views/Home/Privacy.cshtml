@@ -1,0 +1,29 @@
+﻿@model IEnumerable<MVCTest.Models.ValueList>
+    <div class="row" style="border:double;">
+        <div class="col-12" style="text-align: center">
+            <h1>九九乘法表</h1>
+        </div>
+    </div>
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                @for (int i = 1; i < 10; i++)
+                {
+                    if (item.num == i)
+                    {
+
+                        <div class="col-4" style="border:dashed;text-align:center">
+                            @foreach (var obj in item.value)
+                            {
+
+
+                                <div class="">@obj</div>
+
+
+                            }
+                        </div>
+
+                    }
+                }
+            }
+        </div>
