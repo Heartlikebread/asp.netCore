@@ -40,10 +40,30 @@ namespace FileUpload.Controllers
 
         public IActionResult SingleFile(IFormFile file) {
             var dir = _env.ContentRootPath;
-            using (var fileStream = new FileStream(Path.Combine(@"d:\", file.FileName), FileMode.Create, FileAccess.Write))
+
+
+            StreamReader reader = new StreamReader(file.OpenReadStream());
+            String content = reader.ReadToEnd();
+            String name = file.FileName;
+            String filename = @"D:/Test/" + name;
+            if (System.IO.File.Exists(filename))
             {
-                file.CopyTo(fileStream);
+                System.IO.File.Delete(filename);
             }
+            using (FileStream fs = System.IO.File.Create(filename))
+            {
+           
+                file.CopyTo(fs);
+               
+                fs.Flush();
+            }
+            //using (var fileStream = new FileStream(Path.Combine(@"d:\", file.FileName), FileMode.Create, FileAccess.Write))
+            //{
+            //    file.CopyTo(fileStream);
+            //}
+
+
+
                 return RedirectToAction("Index");
         }
 

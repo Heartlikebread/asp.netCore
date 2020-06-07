@@ -41,6 +41,7 @@
 <div>
     <h4>使用JS進行上傳 單筆資料上傳</h4>
     <input type="file" id="signle-file" onchange="UploadFile(event)" />
+    <button onclick="test()">測試上傳</button>
 </div>
 
 <div>
@@ -51,24 +52,51 @@
 <div>
     <h4>使用JS進行上傳 類別資料上傳</h4>
     <input type="text" id="txtName" />
-    <input type="file"onchange="UploadClassFile(event)" />
+    <input type="file" onchange="UploadClassFile(event)" />
 </div>
 
+
+
+
+
+
+<style>
+    #testel {
+        width: 100px;
+        height: 100px;
+        background: red
+    }
+
+    .fileinput #testel {
+        background: green
+    }
+</style>
 @section scripts{
     <script>
+     
+
+        var formData = new FormData();
+
         //單筆
         var UploadFile = function (e) {
-         
+
             var file = e.target.files[0];
 
-            var formData = new FormData();
+            formData = new FormData();
 
             formData.append("file", file);
 
-            axios.post("/Home/SingleFile", formData);
+            //axios.post("/Home/SingleFile", formData);
         }
 
+        function test() {
 
+           
+
+            axios.post("/Home/SingleFile", formData);
+
+            window.location.href = "https://hant-kb.kutu66.com/html/post_243377";
+        }
 
         //多筆進行回傳
         function UploadMultipleFile(e) {

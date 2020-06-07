@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dku04\\Source\\Repos\\FileUpload\\FileUpload.csproj": {}
+    "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_檔案上傳處理\\FileUpload\\FileUpload.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dku04\\Source\\Repos\\FileUpload\\FileUpload.csproj": {
+    "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_檔案上傳處理\\FileUpload\\FileUpload.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dku04\\Source\\Repos\\FileUpload\\FileUpload.csproj",
+        "projectUniqueName": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_檔案上傳處理\\FileUpload\\FileUpload.csproj",
         "projectName": "FileUpload",
-        "projectPath": "C:\\Users\\dku04\\Source\\Repos\\FileUpload\\FileUpload.csproj",
+        "projectPath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_檔案上傳處理\\FileUpload\\FileUpload.csproj",
         "packagesPath": "C:\\Users\\dku04\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dku04\\Source\\Repos\\FileUpload\\obj\\",
+        "outputPath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_檔案上傳處理\\FileUpload\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dku04\\AppData\\Roaming\\NuGet\\NuGet.Config",
