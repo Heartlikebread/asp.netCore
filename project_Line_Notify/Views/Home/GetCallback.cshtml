@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "GetCallback";
+}
+    <div class="row">       
+        <h3>成功取得授權碼</h3>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">code:</span>
+            </div>
+            <input type="text" class="form-control" id="code" value="@ViewData["code"]" disabled>
+        </div>
+        
+        @*<button onclick="fetchToken()" type="button" class="btn btn-outline-info">test</button>*@
+    </div>
+    <input type="button" name="fetchToken" value="帶回Token測試訊息發送" onclick="fetchToken()" class="btn btn-outline-info" />
+    <script>
+    var clientSecret = "";
+    var clientID = "";
+    clientSecret = getCookieByName('clientSecret');
+        clientID = getCookieByName('clientID');
+     
+        function fetchToken() {
+            var code = document.getElementById('code').value;
+            var url = 'http://localhost:64005/Home/FetchToken?code=' + code + '&clientId=' + clientID + '&clientSecret='+clientSecret;
+        window.location.href = url;
+    }
+    function parseCookie() {
+        var cookieObj = {};
+        var cookieAry = document.cookie.split(';');
+        var cookie;
+
+        for (var i = 0, l = cookieAry.length; i < l; ++i) {
+            cookie = cookieAry[i].trim();
+            cookie = cookie.split('=');
+            cookieObj[cookie[0]] = cookie[1];
+        }
+
+        return cookieObj;
+    }
+
+
+    function getCookieByName(name) {
+        var value = parseCookie()[name];
+        if (value) {
+            value = decodeURIComponent(value);
+        }
+
+        return value;
+    }
+
+    </script>

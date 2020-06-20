@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "SendMessageTest";
+}
+<p>成功取得token</p>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text">Token:</span>
+    </div>
+    <input type="text" class="form-control" id="token" value="@ViewData["token"]" disabled>
+</div>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text">Message:</span>
+    </div>
+    <input type="text" class="form-control" id="msg">
+</div>
+       <button type="button" class="btn btn-outline-info" onclick="SendMsg()">發送測試</button>
+       <script>
+           var checkCookie = getCookieByName('clientSecret');        
+
+           function SendMsg() {
+               var token = document.getElementById("token");
+               var message = document.getElementById("msg");
+               var url = 'http://localhost:64005/Home/SendMessage?Token=' + token.value + '&Message=' + message.value
+               axios.get(url);
+           }
+           function parseCookie() {
+               var cookieObj = {};
+               var cookieAry = document.cookie.split(';');
+               var cookie;
+
+               for (var i = 0, l = cookieAry.length; i < l; ++i) {
+                   cookie = cookieAry[i].trim();
+                   cookie = cookie.split('=');
+                   cookieObj[cookie[0]] = cookie[1];
+               }
+
+               return cookieObj;
+           }
+
+
+           function getCookieByName(name) {
+               var value = parseCookie()[name];
+               if (value) {
+                   value = decodeURIComponent(value);
+               }
+
+               return value;
+           }
+
+       </script>
