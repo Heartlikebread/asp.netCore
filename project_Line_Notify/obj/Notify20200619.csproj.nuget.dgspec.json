@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dku04\\Source\\Repos\\Notify20200619\\Notify20200619.csproj": {}
+    "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_Line_Notify\\Notify20200619.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dku04\\Source\\Repos\\Notify20200619\\Notify20200619.csproj": {
+    "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_Line_Notify\\Notify20200619.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dku04\\Source\\Repos\\Notify20200619\\Notify20200619.csproj",
+        "projectUniqueName": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_Line_Notify\\Notify20200619.csproj",
         "projectName": "Notify20200619",
-        "projectPath": "C:\\Users\\dku04\\Source\\Repos\\Notify20200619\\Notify20200619.csproj",
+        "projectPath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_Line_Notify\\Notify20200619.csproj",
         "packagesPath": "C:\\Users\\dku04\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dku04\\Source\\Repos\\Notify20200619\\obj\\",
+        "outputPath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_Line_Notify\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dku04\\AppData\\Roaming\\NuGet\\NuGet.Config",

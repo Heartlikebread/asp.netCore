@@ -2,46 +2,58 @@
     ViewData["Title"] = "Line Notify";
 }
 
-    <div class="row">
-        <div>
-            <h2>1.  註冊與登入</h2>
-            <h3>申請Line帳號</h3>
-            <h5>必須先有Line帳號，才能啟用LineNotify功能。</h5>
-        </div>
-        <div>
-            <h2>2.  登錄LineNotify服務</h2>
-            <h3>2-1.  連結申請 <a href="https://notify-bot.line.me/zh_TW/" target="_blank">連接</a></h3>
-            <h3>2-2.  點選下方登錄服務</h3>
-            <h3>2-3.	登入Line帳號</h3>
-            <h5>
-                設定的服務名稱、服務概要、服務網址 等等必填欄位，其中<samp class="point">Callback URL</samp>設定為http://localhost:64005/Home/GetCallback(<samp class="point">此為本專案API服務使用，若有異動則需變更URL位置</samp>)，會於LineNotify認證oAuth2機制時的畫面顯示。
-            </h5>
-            <h5>
-                補充說明：<p>1. Callback URL請填入接收Code的網頁網址，在LineNotify連動成功時，會將authorize code傳至設定的返回網址，而返回網址需在Callback URL設定中存在，最多可設定5組Callback URL。</p>
-                <p>2.電子郵件帳號欄位為第一次使用服務時的認證需要回信箱點取驗證</p>
-            </h5>
-        </div>
-        <div>
-        </div>
-
+<div class="row">
+    <div>
+        <h2>1.  註冊與登入 (若先前已經完成登錄服務則可直接跳至第3步驟)</h2>
+        <h3>1-1.註冊Line帳號</h3>
     </div>
-    <div class="row">
-        <h3>請至管理登入服務下取得下方欄位</h3>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Client ID:</span>
-                </div>
-                <input type="text" class="form-control" id="txtClientID" placeholder="請填入Client ID">
-            </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Client Secret:</span>
-                </div>
-                <input type="text" class="form-control" id="txtClientSecret" placeholder="請填入Client Secret">
-            </div>
-            <button onclick="Auth();" type="button" class="btn btn-outline-info">點選這裡連結到Line Notify設定與並連動並帶回Token </button>
+    <div>
+        <h2>2.  登錄LineNotify服務</h2>
+        <h3>2-1.  連結申請 <a href="https://notify-bot.line.me/zh_TW/" target="_blank">連接</a></h3>
+        <h3>2-2.  點選下方登錄服務</h3>
+        <h3>2-3.	登入Line帳號</h3>
+        <div style="margin-left:20px">
+            <h5>
+                設定服務名稱、服務概要、服務網址 等等必填欄位，其中Callback URL輸入下方網址<br />
 
+            </h5>
+            <div class="row">
+                <div class="col-2 ">
+                    <div class="float-right">
+                        Callback URL:
+                    </div>
+                </div>
+                <div class="col-10"><input style="width:100%" type="text" name="name" value="http://localhost:64005/Home/GetCallback" disabled /></div>
+            </div>
+            <h5>
+                補充說明：<p>A. Callback URL會於LineNotify認證oAuth2機制時，呼叫此網址回傳驗證碼(<samp class="point">此API若有異動則需變更URL位置</samp>)</p>
+                <p>B.電子郵件帳號第一次開通登錄服務時需要信箱再次驗證</p>
+            </h5>
+        </div>
     </div>
+    <div>
+    </div>
+
+</div>
+<div class="row">
+    <h2>3.請至管理登錄服務取得下方帳號資訊</h2>
+    <h3>3-1.直接<a href="https://notify-bot.line.me/zh_TW/" target="_blank">登入</a>，登入後選取右上方的下拉選單選取管理登錄服務</h3><br />
+    <h3>3-2.點選要使用的LineNotify服務 取得Clien ID 與Client Secret</h3>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Client ID:</span>
+        </div>
+        <input type="text" class="form-control" id="txtClientID" placeholder="請填入Client ID">
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Client Secret:</span>
+        </div>
+        <input type="text" class="form-control" id="txtClientSecret" placeholder="請填入Client Secret">
+    </div>
+    <button onclick="Auth();" type="button" class="btn btn-outline-info">點選連結到Line Notify進行連動取得authorize code </button>
+
+</div>
 
 
 <style>
@@ -56,25 +68,9 @@
     function Auth() {
         var clientID = document.getElementById('txtClientID');
         var clientSecret = document.getElementById('txtClientSecret');
-        if (clientID.value != "") {
+        if (clientID.value != "" && clientSecret.value != "") {
             document.cookie = 'clientSecret=' + clientSecret.value;
             document.cookie = 'clientID=' + clientID.value;
-            //if (clientSecret.value == "") {
-            //    alert("清輸入Client ID");
-            //    return;
-            //} else {
-            //    //檢查Cookie
-            //    var clientSecret = getCookie("clientSecret");
-            //    if (clientSecret != "") {
-            //        //設定Cookie
-            //          setCookie("clientSecret", clientSecret.value)
-            //    }
-            //    else {
-            //         clearCookie(name);
-            //         setCookie("clientSecret", clientSecret.value)
-            //    }
-            //}
-          
             var URL = 'https://notify-bot.line.me/oauth/authorize?';
             URL += 'response_type=code';
             URL += '&client_id=' + clientID.value;
@@ -82,18 +78,10 @@
             URL += '&scope=notify';
             URL += '&state=abcde';
             window.location.href = URL;
-            //window.open(URL, 'Auth', config = 'height=500,width=500');
         }
         else {
-            alert("清輸入Client ID");
+            alert("請輸入Client ID與Client Secret");
             return;
         }
     }
-   
-
-
-
-
-
-
 </script>

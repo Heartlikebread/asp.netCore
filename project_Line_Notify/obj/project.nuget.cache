@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mCWe/2YGR8B6bEg3iRt48GS1O6RD4czc54vkBxeaXTEVl/SHUwK54rn1zJLQG8PMjii6xTAPRkbXgerM2aDLNg==",
+  "dgSpecHash": "gNwTX6Yd1U0sa1E0wUFBtOQ2Gxbze1j10ZNloRzLTOMzdzWicpELWp9/tbatBnUZHz1DJ7r/WMoVuCmeyfHFcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dku04\\Source\\Repos\\Notify20200619\\Notify20200619.csproj",
+  "projectFilePath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_Line_Notify\\Notify20200619.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dku04\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\dku04\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
