@@ -8249,11 +8249,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dku04\\Source\\Repos\\Soc_Traning\\Soc_Traning.csproj",
+      "projectUniqueName": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_RepositoryPattern\\Soc_Traning\\Soc_Traning.csproj",
       "projectName": "Soc_Traning",
-      "projectPath": "C:\\Users\\dku04\\Source\\Repos\\Soc_Traning\\Soc_Traning.csproj",
+      "projectPath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_RepositoryPattern\\Soc_Traning\\Soc_Traning.csproj",
       "packagesPath": "C:\\Users\\dku04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dku04\\Source\\Repos\\Soc_Traning\\obj\\",
+      "outputPath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_RepositoryPattern\\Soc_Traning\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dku04\\AppData\\Roaming\\NuGet\\NuGet.Config",

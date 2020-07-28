@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n3AFPKQgtNIRMSjuWwyXZbRRZx+BtRHniXQ2tnljxkJu2nn9rryNqXQILERBC8J0QWv6FqQLTg0xflKXfPyMaA==",
+  "dgSpecHash": "BNDOGYFg2qx7XXuKTMy/+GebHXmCTwdmWSFcxZ5sjCF+9yUqIqvtPb8k+yKHN/h9hz14hKlw6IZwa0mGqTIYSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dku04\\Source\\Repos\\Soc_Traning\\Soc_Traning.csproj",
+  "projectFilePath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_RepositoryPattern\\Soc_Traning\\Soc_Traning.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dku04\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\dku04\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

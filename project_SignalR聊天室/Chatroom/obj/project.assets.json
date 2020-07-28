@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dku04\\Documents\\GitHub\\Heartlikebread\\asp.netCore練習專案\\project_SignalR聊天室\\Chatroom\\Chatroom.csproj",
+      "projectUniqueName": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_SignalR聊天室\\Chatroom\\Chatroom.csproj",
       "projectName": "Chatroom",
-      "projectPath": "C:\\Users\\dku04\\Documents\\GitHub\\Heartlikebread\\asp.netCore練習專案\\project_SignalR聊天室\\Chatroom\\Chatroom.csproj",
+      "projectPath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_SignalR聊天室\\Chatroom\\Chatroom.csproj",
       "packagesPath": "C:\\Users\\dku04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dku04\\Documents\\GitHub\\Heartlikebread\\asp.netCore練習專案\\project_SignalR聊天室\\Chatroom\\obj\\",
+      "outputPath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_SignalR聊天室\\Chatroom\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dku04\\AppData\\Roaming\\NuGet\\NuGet.Config",
