@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div>
+        <h4>單筆資料上傳</h4>
+        <form asp-controller="Home" asp-action="SingleFile" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <button type="submit">提交</button>
+        </form>
+    </div>
