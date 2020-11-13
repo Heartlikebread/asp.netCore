@@ -13,6 +13,12 @@
 
 ----
 ## 以下介紹各專案內容
+| 專案 | 說明|
+|  :---:       |     :---:      |
+|project_99乘法表   | 單純練習view 練習Table 產生9*9乘法表。    |
+| project_網頁小算盤    | 測試中。       |
+
+
 > project_99乘法表：單純練習view 練習Table 產生9*9乘法表。
 > project_網頁小算盤：。
 > project_Excel讀寫處理/Epplus_Excel_Example。
