@@ -16,7 +16,7 @@
 | 專案 | 說明|
 |  :---:       |     :---:      |
 |project_99乘法表   | 單純練習view 練習Table 產生9*9乘法表。    |
-| project_網頁小算盤    | ![image](https://heartlikebread.github.io/Heartlikebread/Booststrap／backhand.jpg)      |
+| project_網頁小算盤    | ![image](https://heartlikebread.github.io/Heartlikebread/Booststrap/backhand.jpg)      |
 |project_Excel讀寫處理    | 測試中。       |
 | project_JWTDemo  | 測試中。       |
 |project_Line_Notify  | 測試中。       |
