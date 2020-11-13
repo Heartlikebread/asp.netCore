@@ -13,15 +13,15 @@
 
 ----
 ## 以下介紹各專案內容
-project_99乘法表：單純練習view 練習Table 產生9*9乘法表。
-project_網頁小算盤：。
-project_Excel讀寫處理/Epplus_Excel_Example。
-project_JWTDemo：。
-project_Line_Notify：。
-project_RepositoryPattern：。
-project_SignalR聊天室：。
-project_檔案上傳處理：。
-project_連接SQL與控制器建置：。
+> project_99乘法表：單純練習view 練習Table 產生9*9乘法表。
+> project_網頁小算盤：。
+> project_Excel讀寫處理/Epplus_Excel_Example。
+> project_JWTDemo：。
+>　project_Line_Notify：。
+＞　project_RepositoryPattern：。
+＞　project_SignalR聊天室：。
+＞　project_檔案上傳處理：。
+＞　project_連接SQL與控制器建置：。
 
 ----
 ## 感謝觀看
