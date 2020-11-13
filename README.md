@@ -13,7 +13,7 @@
 
 ----
 ## 以下介紹各專案內容
-| 專案 | 說明|
+| 專案 |
 |  :---:       | 
 |project_99乘法表 ｜
 |![image](https://heartlikebread.github.io/Heartlikebread/Booststrap/backhand.jpg)  ｜
