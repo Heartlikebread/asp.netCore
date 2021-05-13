@@ -47,7 +47,8 @@ namespace JWTDemo.Controllers
 
         }
 
-        private string GenerteJSONWebToken(UserModel userinfo) {
+        private string GenerteJSONWebToken(UserModel userinfo)
+        {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             var claims = new[] {

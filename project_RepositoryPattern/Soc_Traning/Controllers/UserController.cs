@@ -17,6 +17,11 @@ namespace Soc_Traning.Controllers
         {
             _repository = repository;
         }
+
+        public IActionResult Index() {
+
+            return View();
+        }
         [HttpGet]
         public ResultModel GetAll()
         {

@@ -4371,11 +4371,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dku04\\Source\\Repos\\Epplus_Excel_Example\\Epplus_Excel_Example.csproj",
+      "projectUniqueName": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_Excel讀寫處理\\Epplus_Excel_Example\\Epplus_Excel_Example.csproj",
       "projectName": "Epplus_Excel_Example",
-      "projectPath": "C:\\Users\\dku04\\Source\\Repos\\Epplus_Excel_Example\\Epplus_Excel_Example.csproj",
+      "projectPath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_Excel讀寫處理\\Epplus_Excel_Example\\Epplus_Excel_Example.csproj",
       "packagesPath": "C:\\Users\\dku04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dku04\\Source\\Repos\\Epplus_Excel_Example\\obj\\",
+      "outputPath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_Excel讀寫處理\\Epplus_Excel_Example\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dku04\\AppData\\Roaming\\NuGet\\NuGet.Config",

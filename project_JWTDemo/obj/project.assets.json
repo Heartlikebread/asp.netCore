@@ -6388,11 +6388,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dku04\\Documents\\GitHub\\Heartlikebread\\JWTDemo\\JWTDemo.csproj",
+      "projectUniqueName": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_JWTDemo\\JWTDemo.csproj",
       "projectName": "JWTDemo",
-      "projectPath": "C:\\Users\\dku04\\Documents\\GitHub\\Heartlikebread\\JWTDemo\\JWTDemo.csproj",
+      "projectPath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_JWTDemo\\JWTDemo.csproj",
       "packagesPath": "C:\\Users\\dku04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dku04\\Documents\\GitHub\\Heartlikebread\\JWTDemo\\obj\\",
+      "outputPath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_JWTDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dku04\\AppData\\Roaming\\NuGet\\NuGet.Config",
