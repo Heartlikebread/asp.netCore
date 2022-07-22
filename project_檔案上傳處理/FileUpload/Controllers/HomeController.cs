@@ -40,7 +40,11 @@ namespace FileUpload.Controllers
 
         public IActionResult SingleFile(IFormFile file) {
             var dir = _env.ContentRootPath;
+            string path = @"D:\Test.txt";
 
+            // 建立 FileStream 並實例化
+            // 開啟或建立指定路徑檔案，訪問權限唯讀
+            FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read);
 
             StreamReader reader = new StreamReader(file.OpenReadStream());
             String content = reader.ReadToEnd();
@@ -50,12 +54,12 @@ namespace FileUpload.Controllers
             {
                 System.IO.File.Delete(filename);
             }
-            using (FileStream fs = System.IO.File.Create(filename))
+            using (FileStream fss = System.IO.File.Create(filename))
             {
            
-                file.CopyTo(fs);
-               
-                fs.Flush();
+                file.CopyTo(fss);
+
+                fss.Flush();
             }
             //using (var fileStream = new FileStream(Path.Combine(@"d:\", file.FileName), FileMode.Create, FileAccess.Write))
             //{

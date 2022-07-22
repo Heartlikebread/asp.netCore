@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gNwTX6Yd1U0sa1E0wUFBtOQ2Gxbze1j10ZNloRzLTOMzdzWicpELWp9/tbatBnUZHz1DJ7r/WMoVuCmeyfHFcA==",
+  "dgSpecHash": "03pId/S3rPybPMaLoY2N2p08w4M49jEmN8ux3CgGxrh2SUtT805NVgBj7KrDe9o01z1Y1Ejl+7u1hc5FEuoX8g==",
   "success": true,
   "projectFilePath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_Line_Notify\\Notify20200619.csproj",
   "expectedPackageFiles": [
@@ -110,7 +110,8 @@
     "C:\\Users\\dku04\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512",
     "C:\\Users\\dku04\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\dku04\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\dku04\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\dku04\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\dku04\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
   ],
   "logs": []
 }

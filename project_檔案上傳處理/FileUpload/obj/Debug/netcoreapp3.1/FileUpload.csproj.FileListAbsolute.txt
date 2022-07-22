@@ -37,7 +37,6 @@ C:\Users\dku04\Source\Repos\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.genrun
 C:\Users\dku04\Source\Repos\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.csproj.CopyComplete
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\bin\Debug\netcoreapp3.1\FileUpload.exe
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\bin\Debug\netcoreapp3.1\FileUpload.deps.json
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\bin\Debug\netcoreapp3.1\FileUpload.runtimeconfig.json
@@ -46,7 +45,6 @@ C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUploa
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\bin\Debug\netcoreapp3.1\FileUpload.pdb
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\bin\Debug\netcoreapp3.1\FileUpload.Views.dll
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\bin\Debug\netcoreapp3.1\FileUpload.Views.pdb
-C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.csprojAssemblyReference.cache
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.csproj.CoreCompileInputs.cache
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.RazorAssemblyInfo.cache
@@ -67,8 +65,9 @@ C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUploa
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.RazorTargetAssemblyInfo.cs
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.Views.pdb
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\staticwebassets\FileUpload.StaticWebAssets.Manifest.cache
-C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\staticwebassets\FileUpload.StaticWebAssets.xml
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.dll
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.pdb
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.genruntimeconfig.cache
 C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.csproj.CopyComplete
+C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.csproj.AssemblyReference.cache
+C:\Users\dku04\Documents\GitHub\asp.netCore\project_檔案上傳處理\FileUpload\obj\Debug\netcoreapp3.1\FileUpload.GeneratedMSBuildEditorConfig.editorconfig

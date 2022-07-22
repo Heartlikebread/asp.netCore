@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YoGGR1+OZvJA8cYawVD9xX5SdiAXpiMvpZGlUfUyC5NGPnD9XMYQ181PE2g9tFq7/KA6rURGn0j80FOjEa3dmg==",
+  "dgSpecHash": "vZovM3TMmHAI3ZbZrHsxkbKgXtqJTyL37HoHBd+uJKnV3/yNWdTdgrHY0mEmwEjGnLAXFRTguE6cc//1HX4BwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_檔案上傳處理\\FileUpload\\FileUpload.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dku04\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
   "logs": []
 }

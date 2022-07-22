@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BNDOGYFg2qx7XXuKTMy/+GebHXmCTwdmWSFcxZ5sjCF+9yUqIqvtPb8k+yKHN/h9hz14hKlw6IZwa0mGqTIYSQ==",
+  "dgSpecHash": "REi07arz3NLXJy/ZPX7RxLu1f9GzS57KzwH4GHchSwVxbEhmiXfEc7AVxERM/3gTHTRjmKXJvr5ko3cuU2QoNg==",
   "success": true,
   "projectFilePath": "C:\\Users\\dku04\\Documents\\GitHub\\asp.netCore\\project_RepositoryPattern\\Soc_Traning\\Soc_Traning.csproj",
   "expectedPackageFiles": [
@@ -156,7 +156,8 @@
     "C:\\Users\\dku04\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\dku04\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\dku04\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\dku04\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\dku04\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\dku04\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
   ],
   "logs": []
 }

@@ -67,6 +67,14 @@ namespace JWTDemo.Controllers
             var encodetoken = new JwtSecurityTokenHandler().WriteToken(token);
             return encodetoken;
         }
+        public string LogOut() {
+
+
+            return "登出";
+        }
+
+
+
 
         [Authorize]
         [HttpPost("Post")]
